@@ -1,0 +1,133 @@
+/* general */
+.dropbtn.main {
+   border-radius: 0.325vw;
+}
+
+.top {
+   border-top-right-radius: 0.325vw;
+   border-top-left-radius: 0.325vw;
+}
+
+.bot {
+   border-bottom-right-radius: 0.325vw;
+   border-bottom-left-radius: 0.325vw;
+}
+
+.arrow {
+   position: relative;
+   z-index: 9999;
+}
+
+.arrow.up {
+   margin: auto;
+   height: 0;
+   width: 0;
+   border-left: 0.976vw solid transparent;
+   border-right: 0.976vw solid transparent;
+   border-bottom: 2.077vh solid #CAF0F8;
+}
+
+.arrow.left {
+   width: 0;
+   height: 0;
+   border-top: 1.385vh solid transparent;
+   border-bottom: 1.385vh solid transparent;
+
+   border-right: 0.651vw solid #CAF0F8;
+   top: 1.8vh;
+}
+
+/* general */
+
+.dropdown {
+   width: 9.76vw;
+   border-radius: 0.325vw;
+}
+
+.dropbtn {
+   display: block;
+   outline: none;
+   border: none;
+   padding: 1.385vh 0.651vw;
+   text-align: center;
+   cursor: pointer;
+   font-size: 1.041vw;
+
+   user-select: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -webkit-touch-callout: none;
+   -moz-user-select: none;
+   -o-user-select: none;
+}
+
+li.main i {
+   margin-left: 0.325vw;
+}
+
+.dropitems .dropbtn i {
+   float: right;
+}
+
+.dropitems {
+   position: absolute;
+   border-radius: inherit;
+   width: inherit;
+}
+
+.items {
+   background-color: #CAF0F8;
+   padding: 0.325vw;
+   border-radius: 0.325vw;
+   box-shadow: 5px 10px 10px rgba(2, 28, 113, 0.3);
+}
+
+.items .dropbtn {
+   background-color: rgba(255, 255, 255, 0.35);
+}
+
+.dropright {
+   position: relative;
+}
+
+.dropitems.level-2 {
+   display: flex;
+   top: -0.325vw;
+   left: 96%;
+}
+
+.dropitems.level-2 .items {
+   width: 9.76vw;
+}
+
+.dropitems.level-2 div {
+   display: inline-block;
+}
+
+.dropitems.level-1,
+.dropitems.level-2 {
+   visibility: hidden;
+}
+
+.dropbtn:hover,
+.dropdown:hover .main,
+.dropright:hover .child {
+   background-color: rgba(255, 255, 255, 0.75);
+}
+
+.fa-angle-up,
+.fa-angle-left,
+.dropdown:hover .fa-angle-down,
+.dropright:hover .fa-angle-right {
+   display: none;
+}
+
+.dropdown:hover .fa-angle-up,
+.dropright:hover .fa-angle-left {
+   display: inline-block;
+}
+
+.dropdown:hover .dropitems.level-1,
+.dropright:hover .dropitems.level-2 {
+   visibility: visible;
+}

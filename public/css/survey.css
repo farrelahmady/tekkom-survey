@@ -1,0 +1,239 @@
+#survey {
+	position: fixed;
+	align-content: center;
+	right: 0;
+}
+#black-bg {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0;
+	z-index: 0;
+}
+
+#survey #slideBtn,
+#survey .body {
+	margin: auto;
+	z-index: 1;
+}
+
+#survey #slideBtn button {
+	border: none;
+	background-color: #0096c7;
+	width: 4em;
+	height: 7.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1vw 0 0 1vw;
+}
+#survey #slideBtn button:hover,
+#survey #slideBtn button:active {
+	background-color: #0077b6;
+}
+
+#survey #slideBtn button h2 {
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	font-family: "Oswald";
+	line-height: 1;
+	font-size: 2em;
+	color: white;
+}
+
+#survey #slideBtn button i {
+	font-size: 2em;
+	display: none;
+	color: white;
+}
+
+#survey #slideBtn button i.show {
+	display: block;
+}
+
+#survey .body {
+	background: url("../img/bg-survey.png");
+	background-size: cover;
+	width: 0vw;
+	height: 100vh;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+#survey .body h1 {
+	margin: 15px 0;
+	font-family: "Oswald";
+	color: white;
+	font-size: 36px;
+	font-weight: 500;
+	text-align: center;
+}
+
+#survey .body .layer-1 {
+	background-color: rgba(0, 150, 199, 0.3);
+	padding: 0 2.6vw;
+}
+#survey .body .layer-2 {
+	background-color: rgba(0, 180, 215, 0.4);
+	margin-bottom: 60px;
+	width: 450px;
+	height: 475px;
+	position: relative;
+	display: flex;
+	align-content: space-between;
+	overflow: hidden;
+}
+
+#survey .layer-2 button {
+	font-family: inter;
+	font-size: 15px;
+	text-transform: uppercase;
+	background-color: #22a4cf;
+	color: white;
+	border: white 3px solid;
+	border-radius: 5px;
+	width: 170px;
+	height: 60px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#survey .layer-2 button i.fa {
+	position: absolute;
+}
+
+#survey .layer-2 button i.fa-arrow-right {
+	right: 10px;
+}
+
+#survey .layer-2 button i.fa-arrow-left {
+	left: 10px;
+}
+#survey .layer-2 .surveyBtn {
+	margin-bottom: 65px;
+}
+#survey .layer-2 button:hover,
+#survey .layer-2 button:active {
+	background-color: rgba(72, 202, 228, 0.5);
+}
+#survey .layer-2 .btn-box {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: center;
+	position: absolute;
+}
+
+#survey .layer-2 .btn-box:first-child {
+	height: 205px;
+	top: 65px;
+}
+
+#survey .layer-2 .btn-box:last-child {
+	bottom: 65px;
+}
+
+#survey .form {
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+#survey input {
+	width: 363px;
+	height: 49px;
+	border-radius: 5px;
+	border: none;
+	padding: 10px;
+	margin-bottom: 42px;
+}
+
+#survey textarea {
+	width: inherit;
+	height: 221px;
+	border-radius: 5px;
+	border: none;
+	padding: 12px 20px;
+	margin: 0 20px;
+	font-family: arial;
+	font-size: 16px;
+	resize: none;
+	outline: none;
+}
+#survey textarea:focus {
+	outline: none !important;
+	border: 2px solid #023e8a;
+	box-shadow: 0 0 10px #719ece;
+}
+#survey .layer-2 section#profil {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-around;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+
+#survey .layer-2 div.profil {
+	display: flex;
+	width: 100%;
+	margin: 5px 0;
+	align-items: center;
+}
+
+#survey .layer-2 div.profil .biodata {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	margin-left: 30px;
+}
+
+#survey .layer-2 .profil img {
+	border-radius: 10px;
+	width: 5.5rem;
+}
+
+#survey .layer-2 .profil h5,
+#survey .layer-2 .profil small,
+#survey .layer-2 .profil p {
+	width: 100%;
+	font-family: "oswald";
+	color: white;
+	margin: 2.5px 0;
+}
+#survey .layer-2 .profil a {
+	font-family: "oswald";
+	color: white;
+}
+#survey .layer-2 .profil h5 {
+	font-size: 20px;
+}
+#survey .layer-2 .profil small {
+	font-size: 16px;
+	text-transform: uppercase;
+}
+#survey .layer-2 .profil a {
+	font-size: 13px;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+}
+
+#survey .layer-2 a:hover {
+	text-decoration: underline;
+}
+
+#survey .layer-2 i {
+	color: white;
+	padding-right: 5px;
+}

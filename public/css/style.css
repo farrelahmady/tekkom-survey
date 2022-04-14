@@ -1,0 +1,92 @@
+@import url(reset.css);
+@import url(article.css);
+@import url(survey.css);
+@import url(splash-screen.css);
+
+/* Custom Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+	width: 0.65vw;
+}
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+   background: #E5FBFF;
+   background-color: rgba(255, 255, 255, 0.7);
+} */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #023e8a;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #021c71;
+}
+
+/* END */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "inter";
+	color: #021c71;
+}
+
+h1,
+h2 {
+	font-family: "Oswald";
+}
+
+body {
+	max-height: 1024px;
+	background-image: url(../img/bg-article.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	position: absolute;
+	display: flex;
+}
+
+i.panah {
+	display: flex;
+	width: 14px;
+	height: 10px;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+}
+i.align-left {
+	left: 20px;
+}
+i.align-right {
+	right: 20px;
+}
+i.kepala {
+	position: absolute;
+	border: solid white;
+	padding: 3px;
+	transform: rotate(135deg);
+	border-radius: 1px;
+	z-index: 1;
+}
+
+i.kepala.kiri {
+	border-width: 0 2px 2px 0;
+	left: 0;
+}
+i.kepala.kanan {
+	border-width: 2px 0 0 2px;
+	right: 0;
+}
+i.buntut {
+	z-index: 0;
+	background-color: white;
+	flex-grow: 1;
+	height: 1.5px;
+	border-radius: 1px;
+}

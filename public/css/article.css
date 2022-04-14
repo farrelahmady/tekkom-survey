@@ -1,0 +1,96 @@
+@import url(dropdown.css);
+
+/* Article.CSS */
+div#article {
+	top: 12.465vh;
+	right: 6.5vw;
+	left: 6.5vw;
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 2.6vw 2.6vw 0 0;
+	z-index: 0;
+	flex-direction: column;
+	padding: 6.925vh 3.255vw;
+	min-height: 100vh;
+}
+
+#article header {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#article header .title h1 {
+	margin-top: 2.08vh;
+	font-size: 2.34375vw;
+	font-weight: 500;
+}
+
+#article header .title h1:first-child {
+	margin-top: 0;
+}
+
+#article header .nav {
+	display: flex;
+	justify-content: center;
+	color: #021c71;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	align-items: baseline;
+}
+
+#article .body {
+	margin-top: 6.92vh;
+}
+
+#article .body .subjudul {
+	margin-top: 0;
+}
+
+#article .body .subjudul h2 {
+	display: inline-block;
+	font-size: 1.5625vw;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+#article .body .subjudul h2:last-child {
+	color: #0077b6;
+}
+
+#article .body .main {
+	padding-right: 0.9765625vw;
+	margin-top: 4.432vh;
+	overflow: hidden;
+	max-height: 60.526vh;
+}
+
+#article .body .main:hover {
+	overflow: auto;
+}
+
+#article .body .main h3 {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 2px;
+}
+
+#article .body .main p {
+	font-size: 16px;
+	text-align: justify;
+	margin: 14px 0;
+	line-height: 23px;
+	text-indent: 2.5em;
+}
+
+#article .body .main ol {
+	display: block;
+	list-style-type: decimal;
+	padding-inline-start: 2.5em;
+}
+
+#article .body .main li {
+	margin-top: 14px;
+	line-height: 23px;
+}
+
+/* END */
